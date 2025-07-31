@@ -1,9 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+
 // Sample data for 10 dogs
 const dogs = [
   { id: 1, name: "Buddy", breed: "Golden Retriever", age: 3 },
